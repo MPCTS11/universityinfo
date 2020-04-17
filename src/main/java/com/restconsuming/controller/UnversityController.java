@@ -16,6 +16,7 @@ public class UnversityController {
 
 	@PostMapping("/createuniversityinfo")
 	public Response getUniversityInfo(@RequestBody Request request) {
+		System.out.println("callingresponse");
 		return universityService.getUniversityInfo(request);
 
 	}
